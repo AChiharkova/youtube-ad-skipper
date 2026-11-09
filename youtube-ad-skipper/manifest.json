@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Ad Skipper",
+  "version": "0.1.0",
+  "description": "Пропускает рекламу в роликах YouTube и прячет рекламные блоки на странице.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["hide.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
